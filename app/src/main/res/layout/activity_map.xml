@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </org.osmdroid.views.MapView>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/shape_shadow"
+        app:layout_anchor="@id/bottomSheet" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_margin="15dp"
+        android:padding = "10dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="#418FDE"
+        app:tint="#fff"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottomSheet"
+        app:layout_anchorGravity="top|start"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_location" />
+
+
+    <include
+        android:id="@+id/bottomSheet"
+        layout = "@layout/bottom_sheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
