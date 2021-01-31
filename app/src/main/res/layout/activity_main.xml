@@ -46,9 +46,34 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.MaterialComponents.Light"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
         android:layout_weight="1"
+        android:layout_margin="8dp"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding = "50dp"
+                app:srcCompat="@drawable/ic_customer_service_man_svgrepo_com"
+                android:scaleType="centerCrop"
+                />
+
+            <!-- Buttons -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/crm"
+                android:text="Contact Support"
+                />
+
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 

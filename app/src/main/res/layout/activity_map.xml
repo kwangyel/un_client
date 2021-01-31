@@ -6,12 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MapActivity">
 
+
     <org.osmdroid.views.MapView
         android:id="@+id/mapview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </org.osmdroid.views.MapView>
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/fakeMarker"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/ic_location_pin"
+    />
 
     <View
         android:id="@+id/shadow"
